@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const Sequelize = require("sequelize");
 const sequelize = require("../config/database");
 
-const User = sequelize.define(
+const Book = sequelize.define(
   "User",
   {
     id: {
@@ -10,23 +10,19 @@ const User = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
-    first_name: {
+    title: {
       type: DataTypes.STRING(255),
       allowNull: false,
     },
-    last_name: {
+    description: {
       type: DataTypes.STRING(255),
       allowNull: false,
-    },
-    email: {
-      type: DataTypes.STRING(255),
-      allowNull: true,
     },
   },
   {
-    tableName: "user",
+    tableName: "books",
     timestamps: false,
   }
 );
 
-module.exports = User;
+module.exports = Book;
