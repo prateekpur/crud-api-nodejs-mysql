@@ -25,8 +25,6 @@ npm run dev
 + Setting up a Node.js project with Express
 + Connecting Node.js to a MySQL database
 + Implementing CRUD operations (Create, Read, Update, Delete)
-+ Using MVC architecture in a real-world project
-+ Testing the API using Postman or similar tools
 
 
 ## Requirements
